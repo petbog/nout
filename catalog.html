@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>nerds </title>
+</head>
+
+<body>
+<!-- nav-->
+<header class="head">
+    <div class="conteiner">
+        <div class="header__inner">
+            <div class="header__logo">
+                <img src="img/nerds-logo.png" alt="logo">
+            </div>
+            <div class="nav">
+                <a class="nav__link" href="">Студия</a>
+                <a class="nav__link" href="">Клиенты</a>
+                <a class="nav__link" href="">Магазин</a>
+                <a class="nav__link" href="">Контакты</a>
+                <img class="corz_logo" src="img/Shape.png" alt="">
+                <a class="nav__link basket" href="">Корзина</a>
+            </div>
+        </div>
+    </div>
+    <!--title--nav-->
+<div class="title__catalog">
+  <div class="conteiner">
+    <div class="title__catalog__name">
+      <h3 class="name__inner">Магазин готовых шаблонов</h3>
+    </div>
+  </div>
+</div>
+   <!--main-->
+  <div class="main__inner">
+    <div class="conteiner main__inner-container">
+      <section class="filters">
+        <div class="polzunok">
+          <form action="" method="get">
+            <fieldset class="filter-item">
+              <legend class="filters-item__logo">Стоимость :</legend>
+              <div class="range-filters">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+
+                </div>
+                <div class="prise-controls">
+                  <label for="" class="min-price">
+                    от <input type="text" name="min-price" value="0">
+                  </label>
+                  <label for="" class="max-price">
+                    до <input type="text" name="max-price" value="15000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div> <!-- filters tovar-->
+        <div class="filters__tovar">
+          <div class="filters__grid">
+            <form action="" method="get">
+              <fieldset class="filter-tovar">
+               <legend class="filter-tovar__title">Сетка:</legend>
+               <ul class="list__toch">
+                 <li class="checkbox__grid">
+                   <input class="input__checkbox__grid" type="checkbox" name="adaptiv" id="adaptiv" checked>
+                   <label class="label__checkbox__grid" for="adaptiv">Адаптивная</label>
+                 </li>
+                 <li class="checkbox__grid">
+                  <input class="input__checkbox__grid" type="checkbox" name="fixed" id="fixed" >
+                  <label class="label__checkbox__grid" for="fixed">Фиксированная</label>
+                </li>
+                <li class="checkbox__grid">
+                  <input class="input__checkbox__grid" type="checkbox" name="Rubber" id="Rubber" >
+                  <label class="label__checkbox__grid" for="Rubber">Резиновая</label>
+                </li>
+               </ul>
+               <legend class="filter-tovar__title">Особенности:</legend>
+               <ul class="list__toch">
+                 <li class="checkbox__peculiarities">
+                   <input class="input__checkbox__peculiarities" type="checkbox" name="slide" id="slide" checked>
+                   <label class="label__checkbox__peculiarities" for="slide">Слайдер</label>
+                 </li>
+                 <li class="checkbox__peculiarities">
+                  <input class="input__checkbox__peculiarities" type="checkbox" name="block__priemuhestv" id="block__priemuhestv" >
+                  <label class="label__checkbox__peculiarities" for="block__priemuhestv">Блок преимуществ</label>
+                </li>
+                <li class="checkbox__peculiarities">
+                  <input class="input__checkbox__peculiarities" type="checkbox" name="News" id="News" checked >
+                  <label class="label__checkbox__peculiarities" for="News">Новости</label>
+                </li>
+                <li class="checkbox__peculiarities">
+                  <input class="input__checkbox__peculiarities" type="checkbox" name="Gallery" id="Gallery" >
+                  <label class="label__checkbox__peculiarities" for="Gallery">Галерея</label>
+                </li>
+                <li class="checkbox__peculiarities">
+                  <input class="input__checkbox__peculiarities" type="checkbox" name="Basket" id="Basket" >
+                  <label class="label__checkbox__peculiarities" for="Basket">Корзина</label>
+                </li>
+               </ul>
+              </fieldset>
+              <button class="button__chekbox" type="submit">ПОКАЗАТЬ</button>
+            </form>
+          </div>
+        </div>
+
+      </section> <!--cards tovar--------------->
+      <section class="product">
+        <div class="filters__catalog">
+          <div class="pokaz">
+            <h3 class="pokaz__catalog">Сортировать:</h3>
+          </div>
+          <div class="sortirovka">
+           <ul class="sortirovka__list">
+             <li class="sortirovka__list-li">
+               <h4>По цене</h4>
+             </li>
+             <li class="sortirovka__list-li">
+               <h4>По типу</h4>
+              </li>
+             <li class="sortirovka__list-li">
+               <h4>По названию</h4>
+              </li>
+              <li class="sortirovka__list-list"><img src="img/bottom.svg" alt="bottom" width="11px" height="10px"></li>
+              <li class="sortirovka__list__li"><img src="img/top.svg" alt="top" width="11px" height="10px"></li>
+           </ul>
+          </div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product__cards">
+            <div class="product__header">
+            <ul class="product__header-list">
+              <li class="product__header-slider"></li>
+              <li class="product__header-slider"></li>
+              <li class="product__header-slider"></li>
+            </ul>
+          </div>
+            <div class="product__img">
+              <img src="img/sedona -slider.jpg" alt="sedona-slaid" width="359px" height="578px">
+            </div>
+            <div class="product__footer">
+              <h4 class="product__footer-logo">Sedona</h4>
+              <p class="product__footer-text">Информационный сайт <br>для туристов</p>
+              <button class="product__footer-button">9 900 ₽</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product__cards">
+            <div class="product__header">
+            <ul class="product__header-list">
+              <li class="product__header-slider"></li>
+              <li class="product__header-slider"></li>
+              <li class="product__header-slider"></li>
+            </ul>
+          </div>
+            <div class="product__img">
+              <img src="img/img-pink 1.jpg" alt="pink-app" width="359px" height="578px">
+            </div>
+            <div class="product__footer">
+              <h4 class="product__footer-logo">Pink App</h4>
+              <p class="product__footer-text">Продуктовый лендинг<br>приложения для iOS и Android</p>
+              <button class="product__footer-button">9 900 ₽</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product__cards">
+            <div class="product__header">
+            <ul class="product__header-list">
+              <li class="product__header-slider"></li>
+              <li class="product__header-slider"></li>
+              <li class="product__header-slider"></li>
+            </ul>
+          </div>
+            <div class="product__img">
+              <img src="img/img-barbershop 1.jpg" alt="barberchop" width="359px" height="578px">
+            </div>
+          </div>
+        </div>
+        <div class="product-wrapper">
+          <div class="product__cards">
+            <div class="product__header">
+            <ul class="product__header-list">
+              <li class="product__header-slider"></li>
+              <li class="product__header-slider"></li>
+              <li class="product__header-slider"></li>
+            </ul>
+          </div>
+            <div class="product__img">
+              <img src="img/img-mishka 1.jpg" alt="img-mishka" width="359px" height="578px">
+            </div>
+            </div>
+          </div>
+          <div class="product-wrapper">
+            <div class="product__cards">
+              <div class="product__header">
+              <ul class="product__header-list">
+                <li class="product__header-slider"></li>
+                <li class="product__header-slider"></li>
+                <li class="product__header-slider"></li>
+              </ul>
+            </div>
+              <div class="product__img">
+                <img src="img/img-aplus 1.jpg" alt="img-aplus" width="359px" height="578px">
+              </div>
+              </div>
+           </div>
+           <div class="product-wrapper">
+            <div class="product__cards">
+              <div class="product__header">
+              <ul class="product__header-list">
+                <li class="product__header-slider"></li>
+                <li class="product__header-slider"></li>
+                <li class="product__header-slider"></li>
+              </ul>
+            </div>
+              <div class="product__img">
+                <img src="img/img-kvast 1.jpg" alt="img-kvast" width="359px" height="578px">
+              </div>
+              <div class="product__footer">
+                <h4 class="product__footer-logo">КВАСТ</h4>
+                <p class="product__footer-text">Промо-сайт производителя<br>крафтового кваса</p>
+                <button class="product__footer-button">9 900 ₽</button>
+              </div>
+            </div>
+          </div><!-------toh--------->
+          <div class="toh">
+            <ul class="toh__ul">
+              <li class="toh_list">1</li>
+              <li class="toh_list">2</li>
+              <li class="toh_list">3</li>
+              <button class="toh__button">Следующая</button>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+<!-- cards------------------------------------>
+ <div class="contain__inner">
+  <div class=".contain__catalog">
+    <div class="cards">
+        <div class="cards__block">
+            <div class="cards__contackt">
+                <h3 class="contackt__title">NЁRDS DESIGN STUDIO</h3>
+                <p class="contackt__adres">наб. Реки Карповки, <br> лит П, Санкт-Петербург</p>
+                <a class="contack__tel" href="tel:+7 800 555-86-28">+7 800 555-86-28</a>
+                <a class="bt btn--red"href="#">Напишите нам</a>
+            </div>
+            <div class="cards__marker">
+                <img src="img/map-marker 1.png" width="231px" height="190px" alt="marker">
+            </div>
+            <div class="cards__cart">
+                <img src="img/cards.png" width="2023px" height="416px" alt="karta">
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!------- footer------------------------------------->
+  <div class="conteiner">
+    <div class="footer__inner">
+        <div class="footer__sozial">
+            <a class="footer__vk"  href="#">
+                <img  src="img/vk.png" width="26px" height="15px" alt="vk">
+            </a>
+            <a class="footer__fsb" href="#">
+                <img  src="img/fsb.png" width="12px" height="22px" alt="fsb">
+            </a>
+            <a class="footer__inst"  href="#">
+                <img  src="img/inst.png" width="21px" height="21px" alt="inst">
+            </a>
+
+        </div>
+        <div class="footer__logo">
+            <h2 class="footer__slogan">Давайте дружить, это выгодно!</h2>
+            <p class="footer__sale">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+</html>
